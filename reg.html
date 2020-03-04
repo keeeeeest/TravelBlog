@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="IMG/icon.png">
+        <title>Регистрация</title>
+    </head>
+
+    <body>
+        <form enctype="multipart/form-data" name="registration" action="#" method="post">
+            <div>
+                <label for="first_name">Имя</label>
+                <input minlength="2" maxlength="12" id="first_name" type="text" name="first_name" placeholder="Имя">
+            </div>
+            
+            <div>
+                <label for="second_name">Фамилия</label>
+                <input minlength="2" maxlength="20" id="second_name" type="text" name="second_name" placeholder="Фамилия">
+            </div>
+
+            <div>
+                <label for="age">Ваш возраст</label>
+                <input name="age" id="age" type="number" min="0" max="125">
+            </div>
+
+            <div>
+                <label for="city">Ваш город</label>
+                <select id="city" name="city">
+                    <option value="Moscow">Москва</option>
+                    <option value="SPB">Санкт-Петербург</option>
+                    <option value="Ekat">Екатеринбург</option>
+                    <option value="Kazan">Казань</option>
+                    <option value="NN">Нижний Новгород</option>
+                    <option value="Novosib">Новосибирск</option>
+                    <option value="Vladivostok">Владивосток</option>
+                    <option value="Omsk">Омск</option>
+                    <option value="Chelyabinsk">Челябинск</option>
+                    <option value="Rostov">Росто-на-Дону</option>
+                    <option value="Samara">Самара</option>
+                    <option value="Ufa">Уфа</option>
+                    <option value="Krasnodar">Краснодар</option>
+                    <option value="Krasnoyarsk">Красноярск</option>
+                    <option value="Perm">Пермь</option>
+                    <option value="Voronezh">Воронеж</option>
+                    <option value="Volgograd">Волгоград</option>
+                    <option value="Kaliningrad">Калининград</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Ваш аватар</label>
+                <input id="photo" type="file" accept="image/*" name="photo">
+            </div>
+
+            <div>
+                <label for="login">Логин</label>
+                <input required id="login" type="text" name="login" placeholder="Логин">
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input required id="email" type="email" name="email" placeholder="e-mail">
+            </div>
+
+            <div>
+                <label for="password">Пароль</label>
+                <input required id="password" type="password" name="password" placeholder="пароль">
+            </div>
+            
+            <input type="submit" value="Зарегистрироваться">
+            <input type="reset" value="Очистить данные">
+        </form>
+    </body>
+</html>
