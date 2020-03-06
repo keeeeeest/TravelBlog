@@ -1,0 +1,66 @@
+body {
+    background: azure;
+    color: black;
+    font-size: 20px;
+    margin: 0;
+    background-image: url(../IMG/bg.png);
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+header {
+ background: rgba(7, 219, 247, 0.2);
+}
+
+footer {
+    background: rgba(7, 219, 247, 0.5);
+}
+
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+ul.mainnav {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div {
+    margin: 30px 0;
+}
+
+button {
+    margin: 5px 40px;
+    padding: 3px;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.title-preview {
+    font-size: 25px;
+}
+
+.author {
+    color: rgb(1, 180, 204);
+}
+
+.continue {
+    padding: 10px 30px;
+    background:  rgba(7, 219, 247, 0.5);
+    border-radius: 10px;
+}
