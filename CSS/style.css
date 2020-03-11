@@ -64,3 +64,33 @@ button {
     background:  rgba(7, 219, 247, 0.5);
     border-radius: 10px;
 }
+
+.mainnav a {
+    color: #695753;
+    display: block;
+}
+
+.content-center {
+    text-align: center;
+}
+
+
+/* .menu a {
+    color: #695753;
+    border-right: 1px solid #b19891;
+     background: orangered;
+     display: block;
+}
+
+.menu li:last-child a{
+    border-right: none;
+}
+
+.content-center {
+    text-align: center;
+}
+
+.submenu a {
+    border-top: 1px solid #b19891;
+    border-right: none;
+} */
