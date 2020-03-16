@@ -14,21 +14,21 @@
     <body>
         <header>
             <nav>
-                <ul class="mainnav">
-                    <li>
+                <ul class="flex-row space-around menu">
+                    <li class="content-center">
                         <a href="main.html">Главная</a>
                     </li>
-                    <li>
+                    <li class="content-center">
                         <a href="posts.html">Блог</a>
                     </li>
-                    <li>
+                    <li class="content-center">
                         <a href="news.html">Новости</a>
                     </li>
-                    <li>
+                    <li class="content-center">
                         <a href="advice.html">Советы</a>
                     </li>
-                    <li>Билеты
-                        <ul>
+                    <li class="content-center drop-down"><a href="#">Билеты</a>
+                        <ul class="submenu">
                             <li>
                                 <a href="https://www.aviasales.ru/">Авиа</a>
                             </li>
@@ -37,18 +37,18 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="https://www.booking.com/">Отели</a></li>
-                    <li><a href="support.html">Поддержать блог</a></li>
-                    <li><a href="subscribe.html">Подписаться</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
+                    <li class="content-center"><a href="https://www.booking.com/">Отели</a></li>
+                    <li class="content-center"><a href="#subs">Подписаться</a></li>
+                    <li class="content-center"><a href="contacts.html">Контакты</a></li>
+                    <li class="content-center"><a href="#auth">Войти</a></li>
                 </ul>
             </nav>
-
-            <form action="auth.html">
+            
+            <!-- <form action="auth.html">
                 <button>Войти</button>
-            </form>
+            </form>  -->
 
-            <form action="reg.html">
+            <form action="reg.html" class="registration">
                 <button>Зарегистрироваться</button>
             </form>
         </header>
@@ -107,5 +107,23 @@
                 </nav>
             </section>
         </footer>
+
+        <section class="modal" id="auth">
+            <form name="auth" action="#" method="post">
+                <input type="email" name="email" placeholder="Введите ваш e-mail">
+                <input type="password" name="pwd" placeholder="Введите ваш пароль">
+                <input type="submit" value="Войти">
+            </form>
+            <a class="close-modal" href="#0">X</a>
+        </section>
+
+        <section class="modal" id="subs">
+            <form name="subs" action="#" method="post">
+                <p>Новостная рассылка</p>
+                <input type="email" name="email" placeholder="Введите ваш e-mail">
+                <input type="submit" value="Подписаться">
+            </form>
+            <a class="close-modal" href="#0">X</a>
+        </section>
     </body>
 </html>

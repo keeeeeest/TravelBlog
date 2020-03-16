@@ -1,8 +1,14 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
 body {
     background: azure;
     color: black;
     font-size: 20px;
-    margin: 0;
     background-image: url(../IMG/bg.png);
     background-size: auto;
     background-attachment: fixed;
@@ -24,10 +30,6 @@ img {
     height: auto;
 }
 
-ul.mainnav {
-    list-style-type: none;
-}
-
 a {
     text-decoration: none;
 }
@@ -45,10 +47,9 @@ button {
     padding: 3px;
 }
 
-
 .container {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .title-preview {
@@ -59,38 +60,102 @@ button {
     color: rgb(1, 180, 204);
 }
 
+p {
+    margin: 20px 0;
+}
+
 .continue {
     padding: 10px 30px;
     background:  rgba(7, 219, 247, 0.5);
     border-radius: 10px;
 }
 
-.mainnav a {
-    color: #695753;
+
+
+/* Menu */
+
+.menu li {
+    flex-grow: 1;
+}
+
+.menu a {
+    /* color: rgb(64, 64, 255); */
+    color: #0284cf;
+    border-right: 1px solid #0493e6f5;
     display: block;
-}
-
-.content-center {
-    text-align: center;
-}
-
-
-/* .menu a {
-    color: #695753;
-    border-right: 1px solid #b19891;
-     background: orangered;
-     display: block;
+    padding: 16px 0;
 }
 
 .menu li:last-child a{
     border-right: none;
 }
 
+ul.menu {
+    list-style-type: none;
+}
+
+.drop-down {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(7, 219, 247, 0.2);
+
+    display: none;
+    transition: 0.5s ease-in-out;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    border-right: none;
+    border-top: 1px solid #0493e6f5;
+}
+
+
+.registration {
+    margin-top: 5px;
+    margin-left: 88%;
+}
+
+
 .content-center {
     text-align: center;
 }
 
-.submenu a {
-    border-top: 1px solid #b19891;
-    border-right: none;
-} */
+
+/* Modal */
+
+.modal {
+    position: absolute;
+    left: 50%;
+    background: rgb(7, 219, 247);
+    padding: 30px;
+
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+}
+
+.modal:target {
+    top: 50%;
+}
+
+.modal:not(:target) {
+    top: -50%;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+

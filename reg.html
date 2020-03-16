@@ -3,14 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <link rel="icon" href="IMG/icon.png">
+        <link rel="stylesheet" href="CSS/reg.css">
         <title>Регистрация</title>
     </head>
 
     <body>
         <form enctype="multipart/form-data" name="registration" action="#" method="post">
+            <p>Форма регистрации</p>
             <div>
                 <label for="first_name">Имя</label>
-                <input minlength="2" maxlength="12" id="first_name" type="text" name="first_name" placeholder="Имя">
+                <input required minlength="2" maxlength="12" id="first_name" type="text" name="first_name" placeholder="Имя">
+                <span></span>
             </div>
             
             <div>
@@ -55,16 +58,19 @@
             <div>
                 <label for="login">Логин</label>
                 <input required id="login" type="text" name="login" placeholder="Логин">
+                <span></span>
             </div>
 
             <div>
                 <label for="email">E-mail</label>
                 <input required id="email" type="email" name="email" placeholder="e-mail">
+                <span></span>
             </div>
 
             <div>
                 <label for="password">Пароль</label>
                 <input required id="password" type="password" name="password" placeholder="пароль">
+                <span></span>
             </div>
             
             <input type="submit" value="Зарегистрироваться">

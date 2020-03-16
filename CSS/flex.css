@@ -10,3 +10,12 @@
     width: calc(50% - 12px);
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.space-around {
+    justify-content: space-around; 
+}
+
